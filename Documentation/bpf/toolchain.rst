@@ -25,7 +25,7 @@ The step of manually building iproute2 and Linux kernel is usually not necessary
 given that major distributions already ship recent enough kernels by default, but
 would be needed for testing bleeding edge versions or contributing BPF patches to
 iproute2 and to the Linux kernel, respectively. Similarly, for debugging and
-introspection purposes building bpftool is optional, but recommended.
+introspection purposes building bpftool is optional but recommended.
 
 .. tabs::
 
@@ -476,7 +476,7 @@ The generated LLVM IR can also be dumped in human readable format through:
 
     $ clang -O2 -Wall -emit-llvm -S -c xdp-example.c -o -
 
-LLVM is able to attach debug information such as the description of used data
+LLVM can attach debug information such as the description of used data
 types in the program to the generated BPF object file. By default, this is in
 DWARF format.
 
